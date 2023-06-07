@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+.container {
+  padding: 20px;
+}
+.container .nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+.container .nav-icons ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.container .nav-icons ul li {
+  list-style-type: none;
+}
+.container .nav-icons ul li a {
+  text-decoration: none;
+}
+
+.form-container {
+  height: 90vh;
+}
+.form-container .form {
+  width: 920px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(81, 77, 89, 0.1);
+  box-shadow: 0px 195px 78px rgba(81, 77, 89, 0.02), 0px 110px 66px rgba(81, 77, 89, 0.08), 0px 49px 49px rgba(81, 77, 89, 0.13), 0px 12px 27px rgba(81, 77, 89, 0.15), 0px 0px 0px rgba(81, 77, 89, 0.15);
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 0px 20px 20px 20px;
+}
+.form-container .form .form-content {
+  height: 130px;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+.form-container .form .form-content .row {
+  margin: 0;
+}
+
+.row .form-description h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: rgba(81, 77, 89, 0.8);
+}
+.row .form-description h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  white-space: nowrap;
+  color: #514D59;
+}
+
+.form-body {
+  width: 1580.07px;
+  height: 820px;
+}
+.form-body .form-header {
+  width: 180px;
+  height: 40px;
+  background: #212121;
+  border-radius: 20px 120px 0px 0px;
+}
+.form-body .form-header h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-img-container {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/Hero.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+article {
+  margin-bottom: 105px;
+}
+
+p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  margin-left: -30px; /* Adjust the margin as desired */
+}
+
+.img-container {
+  height: 90vh;
+  width: 90%;
+  margin: 0 auto;
+}
+.img-container #camera {
+  position: absolute;
+  top: 180px;
+}
+.img-container #hotBoollon {
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+.img-container #plane {
+  position: absolute;
+  top: 0;
+  left: 300px;
+}
+
+#section-2 {
+  width: 100%;
+}
+#section-2 .containerr {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+#section-2 .containerr h1 {
+  color: #514D59;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 60px;
+}
+
+.row {
+  margin-top: 90px;
+}
+.row .cols img {
+  margin-bottom: 18px;
+}
+.row .cols h3 {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+.row .cols p {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #514D59;
+}
+
+#destination-container {
+  background: #FAFAFA;
+  border: 1px solid rgba(81, 77, 89, 0.15);
+}
+#destination-container .container {
+  display: flex;
+  flex-direction: column;
+  gap: 105px;
+}
+#destination-container .container .row {
+  padding: 0 60px;
+}
+.description h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  /* or 120% */
+  color: #514D59;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+.description p {
+  margin-bottom: 40px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 138% */
+  color: #514D59;
+}
+.description button {
+  border: none;
+  background-color: #fff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #7000FF;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .order-lg-1 {
+    order: 2;
+  }
+  .order-lg-2 {
+    order: 1;
+  }
+}
+@media (max-width: 1108px) {
+  #section-2 .containerr h1 {
+    font-size: 3.5rem;
+  }
+  .destination-description {
+    text-align: center;
+  }
+  .description h1 {
+    font-size: 3rem;
+  }
+  .description p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 968px) {
+  #section-2 .containerr h1 {
+    font-size: 3rem;
+  }
+  .description h1 {
+    font-size: 2.5rem;
+  }
+  .description p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 668px) {
+  #section-2 .containerr h1 {
+    font-size: 2.5rem;
+  }
+  .description h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .description p {
+    font-size: 12px;
+  }
+}
+#myCarousel.carousel,
+#myCarousel.carousel .carousel-item {
+  height: 80vh;
+}
+
+.container .carousel-caption {
+  color: #514D59;
+  margin-bottom: 150px;
+}
+.container .carousel-caption h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 60px;
+  /* identical to box height, or 333% */
+  text-align: center;
+  color: #514D59;
+}
+.container .carousel-caption p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  /* or 120% */
+  text-align: center;
+  color: #514D59;
+}
+.container .carousel-caption small {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+  color: #514D59;
+  padding-right: 150px;
+}
+
+.move-up {
+  margin-bottom: 50px;
+}
+.move-up button {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  /* Rest of the styles */
+}
+.move-up .active {
+  background-color: #A868E0 !important;
+}
+
+#myCarousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* Adjust the size and positioning of the container as needed */
+}
+#myCarousel .imgs-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Adjust the size and positioning of each image container as needed */
+}
+#myCarousel .imgs-container .image1 {
+  position: absolute;
+  top: 250px;
+  left: 150px;
+}
+#myCarousel .imgs-container .image2 {
+  position: absolute;
+  top: 250px;
+  left: 1250px;
+}
+#myCarousel .imgs-container .image3 {
+  position: absolute;
+  top: 50px;
+  left: 1250px;
+}
+#myCarousel .imgs-container .image4 {
+  position: absolute;
+  top: 50px;
+  left: 250px;
+}
+#myCarousel .imgs-container .image5 {
+  position: absolute;
+  top: 450px;
+  left: 250px;
+}
+
+.footer-container {
+  padding: 40px;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+}
+.col h5 {
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.col ul.nav li.nav-item a {
+  color: #fafafa;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.footer-content .container footer .foot-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-content .container footer .foot-container p {
+  margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #625F67;
+}
+.footer-content .container footer .foot-container ul {
+  display: flex;
+  margin: 0;
+}
+.footer-content .container footer .foot-container ul li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+.footer-content .container footer .foot-container ul li a {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #625F67;
+}
+
+/*# sourceMappingURL=style.css.map */

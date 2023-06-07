@@ -1,0 +1,110 @@
+#destination-container{
+    
+            background: #FAFAFA;
+            border: 1px solid rgba(81, 77, 89, 0.15);
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 105px;
+
+        .row{
+                padding: 0 60px;
+        }
+
+        .destination-section{
+            
+        }
+       
+        }
+    }
+   .description{
+    h1{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 60px;        
+            /* or 120% */
+            color: #514D59;
+            margin-bottom: 30px;
+            padding-top: 20px;
+    }
+    p{
+        margin-bottom: 40px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        /* or 138% */
+        color: #514D59;
+    }
+    button{
+        border: none;
+        background-color: #fff;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        /* identical to box height */
+        color: #7000FF;
+        padding-bottom: 20px;
+
+    }
+   }
+   @media (max-width: 991.98px){
+    .order-lg-1 {
+            order: 2;
+                }
+    .order-lg-2{
+        order: 1;
+    }
+   }
+
+   @media (max-width:1108px){
+    #section-2 .containerr h1{ 
+        font-size: 3.5rem;
+    }
+    .destination-description{
+        text-align: center;
+    }
+    .description{
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+   }
+   @media (max-width:968px){
+    #section-2 .containerr h1{ 
+        font-size: 3rem;
+        
+    }
+    .description{
+        h1{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+   }
+   @media (max-width:668px){
+    #section-2 .containerr h1{ 
+        font-size: 2.5rem;
+        
+    }
+    .description{
+        h1{
+            font-size: 2rem;
+            line-height: 1.2;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+   }
+

@@ -1,0 +1,47 @@
+#section-2{
+    width: 100%;
+    
+    .containerr{
+       width: 80%;
+       margin: 0 auto;
+       text-align: center;
+    
+
+       h1{
+        color: #514D59;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 60px;
+
+       }
+    }
+}
+.row{
+    margin-top: 90px;
+    .cols{
+        img{
+            margin-bottom: 18px;
+        }
+        h3{
+            font-family: Poppins;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 33px;
+            letter-spacing: 0em;
+            text-align: center;
+            font-style: normal;
+            margin-bottom: 10px;
+        }
+        p{
+            font-family: 'poppins';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            color: #514D59;
+
+        }
+    }
+}
+

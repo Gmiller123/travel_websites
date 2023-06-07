@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero-img-container">
+      <header class="container-fluid">
+        <nav
+          class="container d-flex align-items-center justify-content-between">
+          <div class="nav-logo d-flex">
+            <a href="#"
+              ><img class="img-fluid" src="./images/logo.png" alt=""
+            /></a>
+            <img class="img-fluid" src="/images/logoText.png" alt="" />
+          </div>
+          <div class="nav-icons">
+            <ul>
+              <li>
+                <a href=""
+                  ><img class="img-fluid" src="/images/user.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img class="img-fluid" src="/images/notification.png" alt=""
+                /></a>
+              </li>
+            </ul>
+            <ul>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark"
+                aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <img src="./images/menu.png" alt="" />
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="offcanvas offcanvas-end text-bg-dark"
+                tabindex="-1"
+                id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                    Offcanvas
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                      Search
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </nav>
+        <div
+          class="form-container d-flex align-items-center justify-content-center">
+          <div class="form d-flex align-items-center justify-content-center">
+            <div
+              class="form-content d-flex align-items-center justify-content-between">
+              <div class="row">
+                <div
+                  style="border-right: 1px solid #514d59"
+                  class="col-lg-3 col-md-3 d-flex">
+                  <div
+                    class="row d-flex align-items-center justify-content-center">
+                    <div style="padding-right: 30px" class="col-lg-3 form-icon">
+                      <img src="./images/form-globe.png" alt="" />
+                    </div>
+                    <div class="col-lg-9 form-description">
+                      <h1>Destination</h1>
+                      <input
+                        style="
+                          border: none;
+                          outline: none;
+                          font-family: 'Poppins';
+                          font-style: normal;
+                          font-weight: 600;
+                          font-size: 24px;
+                          line-height: 36px;
+                          /* identical to box height */
+
+                          color: #514d59;
+                          width: 130px;
+                        "
+                        type="text"
+                        placeholder="Where to?" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="padding-left: 20px; border-right: 1px solid #514d59"
+                  class="col-lg-4 col-md-4">
+                  <div
+                    class="row d-flex align-items-center justify-content-center">
+                    <div class="col-lg-2 form-icon">
+                      <img src="./images/form-calendar.png" alt="" />
+                    </div>
+                    <div class="col-lg-10 form-description">
+                      <h1>Date</h1>
+                      <input
+                        style="
+                          outline: none;
+                          width: 160px;
+                          border: none;
+                          font-family: 'Poppins';
+                          font-style: normal;
+                          font-weight: 600;
+                          font-size: 24px;
+                          line-height: 36px;
+                          /* identical to box height */
+
+                          color: #514d59;
+                        "
+                        type="text"
+                        id="datepicker"
+                        placeholder="MM / DD / YY" />
+                    </div>
+                  </div>
+                </div>
+                <div style="padding-left: 30px" class="col-lg-3 col-md-3">
+                  <div
+                    class="row d-flex align-items-center justify-content-center">
+                    <div style="padding-right: 20px" class="col-lg-2 form-icon">
+                      <img src="./images/form-guests.png" alt="" />
+                    </div>
+                    <div class="col-lg-10 form-description">
+                      <h1>Guests</h1>
+                      <input
+                        style="
+                          width: 120px;
+                          border: none;
+                          outline: none;
+                          font-family: 'Poppins';
+                          font-style: normal;
+                          font-weight: 600;
+                          font-size: 24px;
+                          line-height: 36px;
+                          /* identical to box height */
+
+                          color: #514d59;
+                        "
+                        type="number"
+                        placeholder="2 adults" />
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-2 col-md-2 d-flex align-items-center justify-content-center">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <a href=""><img src="./images/search.png" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <section style="padding-bottom: 100px" id="section-2">
+      <div class="containerr mb-5">
+        <h1>We got the goods</h1>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 cols">
+            <img
+              class="img-fluid"
+              src="./images/ticketinsurance.png"
+              alt="ticket insurance" />
+            <h3>Ticket insurance</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Cupiditate veritatis o
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 cols">
+            <img
+              class="img-fluid"
+              src="./images/activites.png"
+              alt="activites" />
+            <h3>Activities</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Cupiditate veritatis om
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 cols">
+            <img
+              class="img-fluid"
+              src="./images/travelOptions.png"
+              alt="travel option" />
+            <h3>travel Options</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Cupiditate veritatis om,
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 cols">
+            <img
+              class="img-fluid"
+              src="./images/sightseeing.png"
+              alt="sightseeing" />
+            <h3>sightseeing</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Cupiditate veritatis om
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="border pb-5" id="destination-container">
+      <div class="container">
+        <div class="row mb-4">
+          <div
+            class="col-md-12 col-lg-6 destination-section d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="./images/rome.png" alt="" />
+          </div>
+          <div
+            class="col-md-12 col-lg-6 d-flex align-items-center justify-content-center destination-description">
+            <div style="max-width: 450px" class="description">
+              <h1>See Rome and its architectural wonders</h1>
+              <p>
+                Nunc ullamcorper faucibus eu nullam at. Blandit sed vel dolor
+                tortor ultrices risus mattis faucibus eu. Massa sit aliquet diam
+                nullam sed ipsum. Dignissim lacus ac amet egestas.
+              </p>
+              <button>
+                Discover Rome
+                <span><img src="./images/arrow.png" alt="" /></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div
+            class="col-md-12 col-lg-6 destination-section d-flex align-items-center justify-content-center order-lg-1 destination-description">
+            <div style="width: 450px" class="description">
+              <h1>Taste delightful rice beverages in Hanoi</h1>
+              <p>
+                Commodo dui, enim lorem felis. Vulputate non auctor pulvinar
+                massa ut leo a duis pellentesque. Nibh faucibus amet, gravida
+                tortor, id et tincidunt scelerisque.
+              </p>
+              <button>
+                Discover Hanoi
+                <span
+                  ><img class="img-fluid" src="./images/arrow.png" alt=""
+                /></span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-md-12 col-lg-6 d-flex align-items-center justify-content-center order-lg-2">
+            <img class="img-fluid" src="./images/Hhanoi.png" alt="" />
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div
+            class="col-md-12 col-lg-6 destination-section d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="./images/cappadocia.png" alt="" />
+          </div>
+          <div
+            class="col-md-12 col-lg-6 d-flex align-items-center justify-content-center destination-description">
+            <div style="width: 400px" class="description">
+              <h1>Fly over the mountains in Cappadocia</h1>
+              <p>
+                Nunc ullamcorper faucibus eu nullam at. Blandit sed vel dolor
+                tortor ultrices risus mattis faucibus eu. Massa sit aliquet diam
+                nullam sed ipsum. Dignissim lacus ac amet egestas.
+              </p>
+              <button>
+                Discover Cappadocia
+                <span><img src="./images/arrow.png" alt="" /></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators move-up">
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="bg-secondary"
+          aria-label="Slide 1"></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+          class="active bg-secondary"
+          aria-current="true"></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+          class="bg-secondary"></button>
+      </div>
+      <div
+        style="width: 80%; margin: 0 auto"
+        class="carousel-inner text-center">
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>What other thinks</h1>
+              <p>“Had a great time can truly recommend!”</p>
+              <small>-Caroline</small>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>What other thinks</h1>
+              <p>“Had a great time can truly recommend!”</p>
+              <small>-Caroline</small>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>What other thinks</h1>
+              <p>“Had a great time can truly recommend!”</p>
+              <small>-Caroline</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container-fluid footer-container">
+      <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 m-0">
+          <div class="col-lg-4 mb-3 d-flex justify-content-between flex-column">
+            <div class="">
+              <a href=""><img src="./images/footerlogo.png" alt="" /></a>
+              <a href=""><img src="./images/footerCaption.png" alt="" /></a>
+            </div>
+            <div>
+              <a class="px-1" href=""
+                ><img src="./images/insta.png" alt=""
+              /></a>
+              <a class="px-1" href=""
+                ><img src="./images/twitter.png" alt=""
+              /></a>
+              <a class="px-1" href=""><img src="./images/fb.png" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 mb-3 col">
+            <h5>Fly with us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">FAQs</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 mb-3 col">
+            <h5>For business</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">FAQs</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 mb-3 col">
+            <h5>Inspiration</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">FAQs</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 mb-3 col">
+            <h5>Support</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">FAQs</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div class="container-fluid footer-content">
+      <div class="container">
+        <footer>
+          <div class="foot-container">
+            <p>Design by Manish Chitrakar</p>
+            <ul>
+              <li>
+                <a href="">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="">Terms of services</a>
+              </li>
+              <li>
+                <a href="">Legal</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("#datepicker").datepicker();
+      $("#anim").on("change", function () {
+        $("#datepicker").datepicker("option", "showAnim", $(this).val());
+      });
+    });
+  </script>
+</html>
