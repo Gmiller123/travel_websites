@@ -2,6 +2,9 @@
 .container {
   padding: 20px;
 }
+.container .nav-logo {
+  gap: 10px;
+}
 .container .nav-icons {
   display: flex;
   align-items: center;
@@ -101,7 +104,7 @@ body {
 .hero-img-container {
   width: 100%;
   height: 100%;
-  background-image: url("/images/Hero.png");
+  background-image: url("./images/Hero.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain;
@@ -121,6 +124,10 @@ p {
 
 input[type=date]::-webkit-calendar-picker-indicator {
   margin-left: -30px; /* Adjust the margin as desired */
+}
+
+.form-description {
+  padding-left: 20px;
 }
 
 .img-container {
@@ -196,6 +203,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 #destination-container .container .row {
   padding: 0 60px;
 }
+
 .description h1 {
   font-family: "Poppins";
   font-style: normal;
@@ -420,6 +428,327 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 24px;
   /* identical to box height */
   color: #625F67;
+}
+
+.destination-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.destination-form h1 {
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+.destination-form h3 {
+  font-size: 16px;
+  padding-bottom: 40px;
+}
+
+.row {
+  margin: 0;
+}
+
+.btn-submit {
+  background-color: #fff;
+  border-right: none !important;
+  background-color: #4CAF50; /* button background color */
+  color: #fff; /* button text color */
+  border: none; /* button border */
+  border-radius: 4px; /* button border radius */
+  padding: 10px 20px; /* button padding */
+  cursor: pointer; /* button cursor */
+}
+.btn-submit:focus {
+  outline: none;
+}
+
+#destination-form-input {
+  border: 2px solid #e9e9e9; /* border color */
+  border-radius: 6px; /* border radius */
+  background-color: #f7f7f7; /* optional background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* optional box shadow */
+  /* Add more custom styles as needed */
+}
+
+#row {
+  background-color: #fff;
+}
+#row .col input {
+  width: 250px;
+  height: 60px;
+  border: none;
+  border-right: 2px solid #ccc;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+/* Optional: To remove the hover outline as well */
+.form-control:hover {
+  border-color: #ced4da;
+}
+
+#form {
+  padding: 80px 0;
+  background: #f5f5f5;
+}
+
+#top-destinations .container h1 {
+  padding: 30px 0 20px 0;
+  font-size: 20px;
+}
+#top-destinations .container .row {
+  width: 100%;
+  gap: 15px;
+}
+#top-destinations .container .row .destination-cards {
+  padding: 0;
+  margin-bottom: 15px;
+  width: 32%;
+  transition: ease-in-out 0.4s;
+}
+#top-destinations .container .row .destination-cards:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+#top-destinations .container .row .destination-cards img {
+  width: 100%;
+  height: 100%;
+}
+
+#signin {
+  padding: 50px 0;
+}
+#signin .container {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+#signin .container h1 {
+  font-size: 22px;
+  padding-bottom: 8px;
+}
+#signin .container p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+#signin .container button {
+  border: none;
+  background-color: #fff;
+  color: #006ce4;
+}
+#signin .container button:hover {
+  color: rgb(76, 175, 80);
+}
+
+#features {
+  padding: 80px 0;
+}
+#features .container {
+  border: 1px solid #ccc;
+}
+#features .container h1.h1 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+#features .container .feature-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#features .container .feature-container .feature {
+  display: flex;
+  gap: 20px;
+}
+#features .container .feature-container .feature:hover {
+  cursor: pointer;
+}
+#features .container .feature-container .feature .icon i {
+  font-size: 40px;
+}
+#features .container .feature-container .feature .text h1 {
+  font-size: 14px;
+  font-weight: 700;
+}
+#features .container .feature-container .feature .text p {
+  font-size: 12px;
+}
+
+@media (max-width: 976px) {
+  .feature-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .feature {
+    padding: 10px 0 10px 0;
+  }
+}
+#footer {
+  padding: 60px 0 40px;
+  background-color: #f5f5f5;
+}
+#footer h4 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+#footer ul {
+  padding: 0;
+}
+#footer ul li {
+  list-style-type: none;
+}
+#footer ul li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+}
+#footer hr {
+  padding-top: 20px;
+}
+#footer .footer-para p {
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+#signup-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+#signup-form .signup-form-container {
+  padding: 40px;
+  width: 100%;
+}
+#signup-form .signup-form-container h1 {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+#signup-form .signup-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+#signup-form .signup-form-container form label {
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+#signup-form .signup-form-container form input {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 40px;
+  padding: 4px 8px;
+  letter-spacing: 1.2px;
+  border-radius: 5px;
+}
+#signup-form .signup-form-container form button {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #006ce4;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+#signup-form .signup-form-container form button:hover {
+  background-color: #003b95;
+}
+#signup-form .signup-form-container .options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 0;
+}
+#signup-form .signup-form-container .options p {
+  margin: 0;
+}
+#signup-form .signup-form-container .hr-container {
+  display: flex;
+  flex-grow: 1;
+}
+#signup-form .signup-form-container .side-hr {
+  border: none;
+  border-top: 3px solid black;
+  flex-grow: 1;
+  margin: 0 10px;
+}
+#signup-form .social-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 20px;
+}
+#signup-form .social-contacts .social-media-container {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all ease 0.6s;
+  cursor: pointer;
+}
+#signup-form .social-contacts .social-media-container:hover {
+  border: 1px solid #006ce4;
+}
+#signup-form .social-contacts .social-media-container i {
+  font-size: 30px;
+  color: #006ce4;
+}
+#signup-form p {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1.5;
+}
+#signup-form a {
+  text-decoration: none;
+}
+#signup-form .a-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#signup-form .a-links a {
+  cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+  #signup-form .signup-form-container {
+    padding: 0;
+  }
+}
+@media (max-width: 968px) {
+  #signup-form {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  #signup-form {
+    width: 50%;
+  }
+}
+@media (max-width: 568px) {
+  #signup-form {
+    width: 60%;
+  }
+}
+@media (max-width: 468px) {
+  #signup-form {
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="container d-flex align-items-center justify-content-between">
+      <div class="nav-logo d-flex">
+        <a href="#"><img class="img-fluid" src="./images/logo.png" alt="" /></a>
+        <img class="img-fluid" src="./images/logoText.png" alt="" />
+      </div>
+      <div class="nav-icons">
+        <ul>
+          <li>
+            <a href=""
+              ><img class="img-fluid" src="./images/user.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img class="img-fluid" src="./images/notification.png" alt=""
+            /></a>
+          </li>
+        </ul>
+        <ul>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbarDark"
+            aria-controls="offcanvasNavbarDark"
+            aria-label="Toggle navigation">
+            <img src="./images/menu.png" alt="" />
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbarDark"
+            aria-labelledby="offcanvasNavbarDarkLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./signup.html">Sign up</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="form">
+      <div class="destination-form container">
+        <h1>What do you want to see and do?</h1>
+        <h3>
+          Discover new attractions and experiences to match your interests and
+          travel style
+        </h3>
+        <form action="" id="destination-form-input">
+          <div class="row" id="row">
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Where are you going?" />
+            </div>
+            <div class="col p-0">
+              <input
+                type="Date"
+                class="form-control"
+                placeholder="Select your dates" />
+            </div>
+            <div class="col p-0">
+              <input class="btn-submit" type="submit" value="Submit" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="top-destinations">
+      <div class="container">
+        <h1>Top-destinations</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 col destination-cards">
+            <img src="./images/dubai.jpg" alt="" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 destination-cards">
+            <img src="./images/aus.jpg" alt="" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 destination-cards">
+            <img src="./images/china.jpg" alt="" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 destination-cards">
+            <img src="./images/hongkong.jpg" alt="" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 destination-cards">
+            <img src="./images/india.jpg" alt="" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 destination-cards">
+            <img src="./images/miami.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="signin">
+      <div class="container w-100">
+        <h1>Sign in to save time</h1>
+        <p>Your airtravel.com account lets you book using your saved details</p>
+        <a href="./signup.html"><button>Sign up</button></a>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <h1 class="h1">We've got you covered</h1>
+        <div class="feature-container">
+          <div class="feature">
+            <div class="icon">
+              <i class="bi bi-yin-yang"></i>
+            </div>
+            <div class="text">
+              <h1>Explore top attractions</h1>
+
+              <p>
+                Experience the best of your destination, with attractions,
+                tours, activities and more
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="icon">
+              <i class="bi bi-speedometer2"></i>
+            </div>
+            <div class="text">
+              <div>
+                <h1>Explore top attractions</h1>
+              </div>
+              <div>
+                <p>
+                  Experience the best of your destination, with attractions,
+                  tours, activities and more
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="icon">
+              <i class="bi bi-tencent-qq"></i>
+            </div>
+            <div class="text">
+              <div>
+                <h1>Explore top attractions</h1>
+              </div>
+              <div>
+                <p>
+                  Experience the best of your destination, with attractions,
+                  tours, activities and more
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-2">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="">corona virus</a></li>
+            <li><a href="">faqs</a></li>
+            <li><a href="">manage your tips</a></li>
+            <li><a href="">Attraction help center</a></li>
+            <li><a href="">Safely resources center</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="">corona virus</a></li>
+            <li><a href="">faqs</a></li>
+            <li><a href="">manage your tips</a></li>
+            <li><a href="">Attraction help center</a></li>
+            <li><a href="">Safely resources center</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="">corona virus</a></li>
+            <li><a href="">faqs</a></li>
+            <li><a href="">manage your tips</a></li>
+            <li><a href="">Attraction help center</a></li>
+            <li><a href="">Safely resources center</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="">corona virus</a></li>
+            <li><a href="">faqs</a></li>
+            <li><a href="">manage your tips</a></li>
+            <li><a href="">Attraction help center</a></li>
+            <li><a href="">Safely resources center</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="">corona virus</a></li>
+            <li><a href="">faqs</a></li>
+            <li><a href="">manage your tips</a></li>
+            <li><a href="">Attraction help center</a></li>
+            <li><a href="">Safely resources center</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="text-center footer-para">
+        <p>
+          Booking.com is part of Booking Holdings Inc., the world leader in
+          online travel and related services.
+        </p>
+        <p>Copyright © 1996–2023 Booking.com™. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
